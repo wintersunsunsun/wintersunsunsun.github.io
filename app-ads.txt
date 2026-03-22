@@ -1,0 +1,6 @@
+# app-ads.txt 用於廣告供應鏈透明度
+# 格式: [廣告平台], [賣家ID], [賣家類型], [認證機構], [備註]
+
+# Google AdMob
+google.com, pub-9707771443927853, DIRECT, f08c47fec0942fa0
+
