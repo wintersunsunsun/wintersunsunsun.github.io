@@ -69,7 +69,16 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 24px;
+    }
+
+    .app-section {
       margin-top: 42px;
+    }
+
+    .section-title {
+      margin: 0 0 18px;
+      font-size: 1.65rem;
+      line-height: 1.25;
     }
 
     .app-card {
@@ -183,13 +192,16 @@
       </p>
     </header>
 
-    <main class="apps">
+    <main>
+      <section class="app-section" aria-labelledby="tools-title">
+        <h2 class="section-title" id="tools-title">Tools</h2>
+        <div class="apps">
       <article class="app-card">
         <div class="icon-wrap">
           <div class="app-icon bscan"><img src="img/barcode_scanner.png" alt="Barcode Scanner Icon"></div>
         </div>
         <div class="app-body">
-          <h2 class="app-name">Barcode Scanner</h2>
+          <h3 class="app-name">Barcode Scanner</h3>
           <span class="app-tag">Utility</span>
           <p class="app-desc">
             Quickly scan barcodes and QR codes with your camera. Ideal for product lookup,
@@ -204,7 +216,7 @@
           <div class="app-icon fat"><img src="img/fat_record.png" alt="Fat Record Icon"></div>
         </div>
         <div class="app-body">
-          <h2 class="app-name">Fat Record</h2>
+          <h3 class="app-name">Fat Record</h3>
           <span class="app-tag">Health</span>
           <p class="app-desc">
             A simple daily health record app for tracking body metrics and personal goals,
@@ -216,25 +228,10 @@
 
       <article class="app-card">
         <div class="icon-wrap">
-          <div class="app-icon game"><img src="img/classic_2048.png" alt="Classic 2048 Icon"></div>
-        </div>
-        <div class="app-body">
-          <h2 class="app-name">Classic 2048</h2>
-          <span class="app-tag">Game</span>
-          <p class="app-desc">
-            A clean and addictive 2048 puzzle game that challenges your strategy and decision-making,
-            with smooth controls and classic gameplay.
-          </p>
-          <a class="app-link" href="https://play.google.com/store/apps/details?id=com.sun.leo.classic2048" target="_blank" rel="noopener noreferrer">View on Google Play</a>
-        </div>
-      </article>
-
-      <article class="app-card">
-        <div class="icon-wrap">
           <div class="app-icon mandala"><img src="img/mandala_grid.png" alt="Mandala Grid Icon"></div>
         </div>
         <div class="app-body">
-          <h2 class="app-name">Mandala Grid</h2>
+          <h3 class="app-name">Mandala Grid</h3>
           <span class="app-tag">Creative</span>
           <p class="app-desc">
             A reflective thinking app inspired by the mandala nine-square method, helping users organize
@@ -243,6 +240,44 @@
           <a class="app-link" href="https://play.google.com/store/apps/details?id=com.sun.leo.mandalagrid" target="_blank" rel="noopener noreferrer">View on Google Play</a>
         </div>
       </article>
+        </div>
+      </section>
+
+      <section class="app-section" aria-labelledby="games-title">
+        <h2 class="section-title" id="games-title">Games</h2>
+        <div class="apps">
+          <article class="app-card">
+            <div class="icon-wrap">
+              <div class="app-icon game"><img src="img/classic_2048.png" alt="Classic 2048 Icon"></div>
+            </div>
+            <div class="app-body">
+              <h3 class="app-name">Classic 2048</h3>
+              <span class="app-tag">Game</span>
+              <p class="app-desc">
+                A clean and addictive 2048 puzzle game that challenges your strategy and decision-making,
+                with smooth controls and classic gameplay.
+              </p>
+              <a class="app-link" href="https://play.google.com/store/apps/details?id=com.sun.leo.classic2048" target="_blank" rel="noopener noreferrer">View on Google Play</a>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <div class="icon-wrap">
+              <div class="app-icon snake"><img src="img/classic_snake.png" alt="Classic Snake Icon"></div>
+            </div>
+            <div class="app-body">
+              <h3 class="app-name">Classic Snake</h3>
+              <span class="app-tag">Game</span>
+              <p class="app-desc">
+                Guide your snake, eat food, and avoid collisions.
+                Choose wall-pass or traditional mode, catch static or moving bonus insects, and set your
+                starting speed as the challenge grows.
+              </p>
+              <a class="app-link" href="https://play.google.com/store/apps/details?id=com.sun.leo.snake" target="_blank" rel="noopener noreferrer">View on Google Play</a>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
   </div>
 </body>
