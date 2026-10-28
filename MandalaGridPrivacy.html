@@ -1,199 +1,176 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mandala Grid - 隱私權政策</title>
+    <title>Privacy Policy - Mandala Grid</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e9ecef;
         }
-        
+
         body {
-            font-family: 'Microsoft YaHei', 'Segoe UI', sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background-color: #f5f5f5;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px 10px;
         }
-        
+
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
-            background-color: white;
+            background: var(--card-bg);
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
         }
-        
+
         h1 {
-            font-size: 28px;
-            color: #2c3e50;
-            margin-bottom: 10px;
-            text-align: center;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2rem;
         }
-        
-        .intro {
-            text-align: center;
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 14px;
-        }
-        
+
         h2 {
-            font-size: 20px;
-            color: #34495e;
+            color: var(--primary-color);
             margin-top: 30px;
-            margin-bottom: 15px;
-            border-left: 4px solid #3498db;
-            padding-left: 15px;
+            font-size: 1.4rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
         }
-        
+
         h3 {
-            font-size: 16px;
-            color: #34495e;
-            margin-top: 15px;
-            margin-bottom: 10px;
+            color: var(--primary-color);
+            margin-top: 20px;
+            font-size: 1.1rem;
         }
-        
-        ol, ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        
-        ol li, ul li {
-            margin-bottom: 12px;
-        }
-        
-        ul li {
-            list-style-type: disc;
-        }
-        
-        ol li {
-            list-style-type: decimal;
-        }
-        
-        ol ol {
-            margin-left: 30px;
-        }
-        
-        ol ul, ul ul {
-            margin-left: 30px;
-            margin-top: 8px;
-        }
-        
-        ul li:before {
-            content: "- ";
-            color: #3498db;
-        }
-        
-        ul li {
-            list-style: none;
-            margin-left: 0;
-        }
-        
+
         p {
-            margin-bottom: 12px;
-            line-height: 1.8;
+            margin: 12px 0;
         }
-        
+
+        ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
         a {
-            color: #3498db;
+            color: var(--accent-color);
             text-decoration: none;
         }
-        
+
         a:hover {
             text-decoration: underline;
         }
-        
-        .section {
-            margin-bottom: 25px;
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 30px 0 20px 0;
         }
-        
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            color: #999;
-            font-size: 12px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
+
+        .effective-date {
+            font-size: 0.9rem;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>隱私權政策</h1>
-        
-        <div class="intro">
-            <p>本隱私權政策說明了<strong>Mandala Grid</strong>(以下簡稱「本應用程式」) 如何收集、使用和保護您的資訊。</p>
-            <p>我們致力於保護您的隱私。本政策旨在說明我們如何處理透過本應用程式收集的資訊。</p>
-        </div>
-        
-        <div class="section">
-            <h2>1. 資訊收集與使用</h2>
-            
-            <h3>個人資料</h3>
-            <p>本應用程式<strong>不會</strong>要求您註冊帳號，也不會主動收集您的個人識別資訊（例如姓名、電子郵件地址或電話號碼）。</p>
-            
-            <h3>本地資料存儲</h3>
-            <p>您在應用程式中建立的所有內容均儲存在您設備的本地資料庫中（使用 Room Persistence Library）。我們無法訪問、上傳或備份這些內容到我們的伺服器。如果您刪除應用程式，除非您有進行系統級別的備份，否則這些本地資料將會遺失。</p>
-            
-            <h3>第三方服務</h3>
-            <p>為了提供廣告服務，本應用程式使用了第三方服務。這些服務可能會收集用於識別您身份的資訊。</p>
-            <p>本應用程式使用的第三方服務供應商的隱私權政策連結：</p>
-            <ul>
-                <li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
-                <li><a href="https://support.google.com/admob/answer/6128543?hl=en">AdMob</a></li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>2. 日誌數據 (Log Data)</h2>
-            <p>當您在使用本應用程式發生錯誤時，我們可能會透過第三方產品收集您設備上的數據和資訊（稱為「日誌數據」）。這些日誌數據可能包括您的設備網路協定（IP）位址、設備名稱、操作系統版本、使用本應用程式時的配置、您使用服務的時間和日期以及其他統計數據。</p>
-        </div>
-        
-        <div class="section">
-            <h2>3. Cookie</h2>
-            <p>Cookie 是包含少量數據的文件，通常用作匿名唯一標識符。本應用程式不會明確使用這些「Cookie」。但是，應用程式可能會使用第三方代碼和庫，這些代碼和庫使用「Cookie」來收集資訊並改進其服務。</p>
-        </div>
-        
-        <div class="section">
-            <h2>4. 服務提供者</h2>
-            <p>我們可能會出於以下原因聘請第三方公司和個人：</p>
-            <ul>
-                <li>促進我們的服務；</li>
-                <li>代表我們提供服務；</li>
-                <li>執行與服務相關的服務；或</li>
-                <li>協助我們分析服務的使用方式。</li>
-            </ul>
-            <p>這些第三方可以訪問您的個人資訊，以便代表我們執行分配給他們的任務。但是，他們有義務不將資訊披露或用於任何其他目的。</p>
-        </div>
-        
-        <div class="section">
-            <h2>5. 安全性</h2>
-            <p>我們重視您提供給我們的個人資訊，因此我們正努力使用商業上可接受的方式來保護它。但請記住，網際網路傳輸方式或電子存儲方式都不是 100% 安全可靠的，我們不能保證其絕對安全性。</p>
-        </div>
-        
-        <div class="section">
-            <h2>6. 兒童隱私</h2>
-            <p>本服務不針對 13 歲以下的任何人。我們不會故意收集 13 歲以下兒童的個人識別資訊。如果我們發現 13 歲以下的兒童向我們提供了個人資訊，我們會立即從我們的伺服器中刪除這些資訊。如果您是父母或監護人，並且您知道您的孩子向我們提供了個人資訊，請與我們聯繫，以便我們採取必要的行動。</p>
-        </div>
-        
-        <div class="section">
-            <h2>7. 本隱私權政策的變更</h2>
-            <p>我們可能會不時更新我們的隱私權政策。因此，建議您定期查看此頁面以了解任何更改。我們會通過在此頁面上發布新的隱私權政策來通知您任何更改。</p>
-        </div>
-        
-        <div class="section">
-            <h2>8. 聯繫我們</h2>
-            <p>如果您對我們的隱私權政策有任何疑問或建議，請隨時聯繫我們。</p>
-        </div>
-        
-        <div class="footer">
-            <p>本政策自 <strong>2024-03-23</strong> 起生效。</p>
-        </div>
+        <h1>Privacy Policy</h1>
+
+        <p>This Privacy Policy explains how <strong>Mandala Grid</strong> (hereinafter referred to as "this Application") collects, uses, and protects your information.</p>
+
+        <p>We are committed to protecting your privacy. This policy is intended to explain how we handle information collected through this Application.</p>
+
+        <h2>1. Information Collection and Use</h2>
+
+        <h3>Personal Data</h3>
+        <p>This Application <strong>will not</strong> require you to create an account, nor will it actively collect your personally identifiable information (such as name, email address, or phone number).</p>
+
+        <h3>Local Data Storage and On-Device AI Integration (AppFunctions)</h3>
+        <ul>
+            <li><strong>Local Data Storage</strong>: All content you create in the Application (such as Mandala grid titles, sub-topics, cell content, and notes) is stored in a local database on your device (using Room Persistence Library). We do not operate external servers to access, upload, or backup your content. If you delete the Application, this local data will be lost unless you have performed a system-level backup.</li>
+            <li><strong>Android AppFunctions Integration (v1.3.0+)</strong>: This Application supports Android AppFunctions (<code>androidx.appfunctions</code>). This feature allows on-device system AI assistants (such as Gemini or Google Assistant on Android 16+) to search, inspect, create, or update your Mandala grids locally upon your voice or text command. All AppFunctions processing is executed strictly on your device ("On-Device"), and your content is never transmitted to or stored on developer servers.</li>
+        </ul>
+
+        <h3>Third-Party Services</h3>
+        <p>In order to provide advertising services, analytics, and crash reporting, this Application uses third-party services. These services may collect information used to identify your device or analyze usage.</p>
+        <p>Third-party service providers used by this Application and links to their privacy policies:</p>
+        <ul>
+            <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+            <li><a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener noreferrer">Meta Audience Network</a></li>
+            <li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a></li>
+        </ul>
+
+        <h2>2. Information Handled by Third-Party SDKs</h2>
+        <p>Depending on the third-party services integrated, the following types of non-personally identifiable information may be collected or processed:</p>
+        <ul>
+            <li><strong>Device or Other Identifiers</strong>: Advertising ID, device model, operating system version, and app instance IDs.</li>
+            <li><strong>App Activity</strong>: Feature usage events (such as grid count, share to AI, image/PDF exports) for analytics.</li>
+            <li><strong>Crash Logs and Diagnostics</strong>: Stack traces, app state, and diagnostic logs when an unexpected error occurs.</li>
+            <li><strong>Coarse Location</strong>: Approximate location data derived from IP address used by ad networks (AdMob, Meta Audience Network) for ad serving.</li>
+        </ul>
+
+        <h2>3. Log Data</h2>
+        <p>When an error occurs while using this Application, diagnostic information and crash reports may be collected automatically through third-party services (such as Firebase Crashlytics). This data helps us identify and fix bugs to improve application stability.</p>
+
+        <h2>4. Cookies and Tracking Technologies</h2>
+        <p>Cookies are files containing a small amount of data that are typically used as anonymous unique identifiers. This Application does not explicitly use traditional web Cookies. However, third-party SDKs (such as AdMob, Meta Audience Network, and Firebase) may use anonymous identifiers or internal mechanisms to collect non-personal information to optimize ads and analytics.</p>
+
+        <h2>5. Service Providers</h2>
+        <p>We may employ third-party companies and individuals for the following reasons:</p>
+        <ul>
+            <li>To facilitate our service;</li>
+            <li>To provide the service on our behalf;</li>
+            <li>To perform service-related services; or</li>
+            <li>To assist us in analyzing how our service is used.</li>
+        </ul>
+        <p>These third parties have access to non-personally identifiable device information solely to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+
+        <h2>6. Security</h2>
+        <p>We value your trust in providing us with information, and we strive to use commercially acceptable means of protecting it. All data transmitted between the Application and third-party SDKs is encrypted in transit using industry-standard protocols (HTTPS/TLS). However, remember that no method of electronic storage or transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+
+        <h2>7. Children's Privacy</h2>
+        <p>This service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we can take necessary actions.</p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Therefore, we recommend that you check this page periodically for changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions or suggestions regarding our Privacy Policy, feel free to contact us.</p>
+
+        <hr>
+        <p class="effective-date">This policy is effective as of <strong>2026-03-23</strong>.</p>
     </div>
 </body>
 </html>
